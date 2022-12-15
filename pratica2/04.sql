@@ -21,4 +21,4 @@ ON
 WHERE
     users.id=50
 AND 
-experiences."endDate" IS NULL;
+    experiences."endDate" IS NULL;

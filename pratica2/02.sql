@@ -5,7 +5,11 @@ SELECT
     testimonials.message 
 FROM 
     testimonials 
-LEFT JOIN 
-    users b1 ON testimonials."writerId" = b1.id 
-LEFT JOIN 
-    users b2 ON testimonials."recipientId" = b2.id;
+JOIN 
+    users b1 
+ON 
+    testimonials."writerId" = b1.id 
+JOIN 
+    users b2 
+ON 
+    testimonials."recipientId" = b2.id;
